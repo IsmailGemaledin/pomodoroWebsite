@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pomodoro Timer</h1>
+    <div class="timer-display" id="timer">50:00</div>
+    <div class="mode" id="mode">Focus Time</div>
+    <div class="darkmode-switch">
+      <label class="switch">
+        <input type="checkbox" id="darkModeToggle">
+        <span class="slider"></span>
+      </label>
+      <span class="darkmode-label">Dark Mode</span>
+    </div>
+    <div class="controls">
+      <button id="start-pause">Start</button>
+      <button id="reset">Reset</button>
+    </div>
+  </div>
+  <div class="timer-options-boxes">
+    <div class="option-box">
+      <label for="focusSelect">Focus Time</label>
+      <select id="focusSelect">
+        <option value="15">15 min</option>
+        <option value="30">30 min</option>
+        <option value="50" selected>50 min</option>
+      </select>
+    </div>
+    <div class="option-box">
+      <label for="breakSelect">Break Time</label>
+      <select id="breakSelect">
+        <option value="5">5 min</option>
+        <option value="10" selected>10 min</option>
+        <option value="15">15 min</option>
+      </select>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
